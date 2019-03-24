@@ -12,7 +12,7 @@ class Landing extends Component {
                         alt="danielPicture"
                         className="danielPicture"/>
                         <div className="banner-text">
-                            <h1> Graduate CS Student </h1>
+                            <h1>Daniel Shvarts</h1>
                         <hr />
 
                         <p>
