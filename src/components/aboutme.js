@@ -9,13 +9,16 @@ class About extends Component {
                     <h2>About Me</h2>
                     <p>Incoming computer science graduate student looking for entry-level internships </p>
                     <hr/>
+                </div>
                     <div className="about-me-text">
                         <div className="about-me-left">
                         <img src={headshot} alt="about-me-photo"/>
                             
                         </div>
                         <div className="about-me-right"> 
-                            <p className="greeting">Hello! I'm Daniel Shvarts.</p>
+                            <div id="greeting">
+                            <p>Hello! I'm Daniel Shvarts.</p>
+                            </div>
                             <p> I'm an incoming graduate student at UCSD where I will be studying computer science with a specialization
                                 in Artificial Intelligence. </p>
                             <p>I previously studied biochemistry at UCSD, wherein I was heavily involved in biochemical research and
@@ -24,7 +27,7 @@ class About extends Component {
                             </p>
                 
                             
-                        </div>
+                        
                     </div>
                 </div> 
             </div>
