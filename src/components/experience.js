@@ -8,7 +8,7 @@ class Experience extends Component {
             <div className="experiences">
                 <div className="experiences-header">
                     <h2>Experiences</h2>
-                    <p>Tinas a fucking loser</p>
+                    <p>“Protons give an atom its identity, electrons its personality.”</p>
                     <hr/>
                 </div> 
                 <h3>Education</h3>
@@ -48,6 +48,21 @@ class Experience extends Component {
                 resumeHeader = "Research Assistant"
                 description = "Investigated the ability of electrical fields to regenerate the optic nerve in order to restore
                 vision in patients. You can read about my work in the lab [INSERT LINK HERE WHEN PUBLISHED]."/>
+
+                <Resume
+                startYear = {2016}
+                endYear = {2018}
+                name = "University of California, San Diego"
+                resumeHeader = "Research Assistant"
+                description = "Investigated how membrane microdomains (enriched in caveolin) regulate cardiovascular function "/>
+                <Resume
+                startYear = {2015}
+                endYear = {2016}
+                name = "University of California, San Diego"
+                resumeHeader = "Research Assistant"
+                description = "Developed an enzymatic fluoresence assay to detect ultratrace aresanate in ground water and crops.
+                You can read about my findings here: "/>
+
             </div>
         )
     }

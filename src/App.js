@@ -1,29 +1,49 @@
 import React, { Component } from 'react';
-import { Layout, Header, Navigation, Content } from 'react-mdl';
 import './App.css';
 import Main from "./components/main";
-import { Link } from 'react-router-dom';
+import NavBar from "./components/navbar";
+import Contact from "./components/contact";
+import Projects from "./components/projects";
+import Landing from './components/landingpage'
+import About from './components/aboutme';
+import Experience from './components/experience';
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
+
+
+ 
 class App extends Component {
   render() {
     return (
-      <div className="demo-big-content">
-          <Layout>
-              <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} 
-              to="/">Daniel Shvarts</Link>} scroll>
-                  <Navigation>
-                      <Link to="/resume">Resume</Link>
-                      <Link to="/aboutme">About Me</Link>
-                      <Link to="/projects">Projects</Link>
-                      <Link to="/contact">Contact</Link>
-                  </Navigation>
-              </Header>
-              <Content>
-                  <div className="page-content" />
-                  <Main />
-              </Content>
-          </Layout>
-      </div>
+      <div className="main-page">
+        
+        <NavBar />
+        <Element name="landing-scroll"> 
+                  <Landing />
+          </Element>
+      
+                
+
+                  <Element name="about-scroll">
+                    <About />
+                  </Element>
+                  <Element name="experience-scroll">
+                    <Experience />
+                  </Element>
+                  <Element name="project-scroll"> 
+
+                  <Projects />
+                  </Element>
+                  <Element name="contact-scroll"> 
+
+                  <Contact />
+                  </Element>
+
+            </div>  
+              
+                    
+
     );
   }
 }
