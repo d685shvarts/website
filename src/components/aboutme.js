@@ -4,6 +4,7 @@ import headshot from '../images/about_me_photo.jpg';
 class About extends Component {
     render() {
         return(
+            <div className="about-me-container">
             <div className="about-me">
                 <div className="about-me-header">
                     <h2>About Me</h2>
@@ -30,6 +31,7 @@ class About extends Component {
                         
                     </div>
                 </div> 
+            </div>
             </div>
         )
     }

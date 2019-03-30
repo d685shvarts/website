@@ -11,7 +11,9 @@ export default class Navbar extends Component {
         <div id="nav-bar">
             <div className="nav-content">
             <li className="nav-item">
-            <Link onClick={this.scrollToTop}>Home</Link>
+            <Link onClick={this.scrollToTop}
+            activeClass="active"
+            duration= {500}>Home</Link>
             </li>
             <li className="nav-item">
             <Link
@@ -35,7 +37,12 @@ export default class Navbar extends Component {
               duration= {500}>Resume</Link>
               </li>
               <li className="nav-item">
-            <Link to="/projects">Projects</Link>
+            <Link activeClass="active"
+              to="projects-scroll"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration= {500}>Projects</Link>
             </li>
             <li className="nav-item">
             <Link 

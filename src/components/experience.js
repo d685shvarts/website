@@ -8,7 +8,7 @@ class Experience extends Component {
             <div className="experiences">
                 <div className="experiences-header">
                     <h2>Experiences</h2>
-                    <p>“Protons give an atom its identity, electrons its personality.”</p>
+                    <p></p>
                     <hr/>
                 </div> 
                 <h3>Education</h3>
@@ -64,6 +64,7 @@ class Experience extends Component {
                 You can read about my findings here: "/>
 
             </div>
+ 
         )
     }
 }

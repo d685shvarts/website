@@ -31,7 +31,8 @@ class App extends Component {
                   <Element name="experience-scroll">
                     <Experience />
                   </Element>
-                  <Element name="project-scroll"> 
+                  
+                  <Element name="projects-scroll"> 
 
                   <Projects />
                   </Element>

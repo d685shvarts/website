@@ -21,8 +21,6 @@
   width: 100%;
   height: 60vh;
   font-family: 'Open Sans', sans-serif !important;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 
@@ -72,15 +70,19 @@
   display: grid;
   height: 50%;
   width: 100%;
-  grid-template-columns: 20% 40%;
-
+  grid-template-columns: 246px 60%;
+  grid-column-gap: 5%;
   justify-content: center;
 }
 
+.about-me-left {
+  justify-self: end;
+}
 .about-me-left img{
   width: 100%;
   max-width: 246px;
   height: auto;
+  
 }
 .about-me h2 {
   font-weight: 300;
@@ -116,9 +118,8 @@
 
 }
 .about-me hr {
-  width: 60%;
+  width: 100%;
   margin-top: 30px;
-  margin-left: 20%;
   color: black;
 }
 /*Experiences Page CSS*/
@@ -127,7 +128,7 @@
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-columns: 20% 40%;
+  grid-template-columns: 30% 60%;
   align-content: center;
   justify-content: center;
   
@@ -181,8 +182,9 @@
 .experiences {
   background: #F3EFE0;
   font-family: 'Open Sans', sans-serif !important;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  width: 100%;
+  height: 100%;
+  padding: 40px 180px;
 }
 
 .experiences-header h2{
@@ -205,9 +207,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
   font-family: 'Open Sans', sans-serif !important;
 }
 .experiences hr {
-  width: 60%;
-  margin-top: 30px;
-  margin-left: 20%;
+  margin: 0 auto;
   color: black;
 }
 .experiences h3 {
@@ -216,8 +216,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
   color: #22A39F;
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-left: 20%;
-  padding-right: 15px;
+  margin-left: 5%;
   padding-left: 15px;
 }
 
@@ -247,7 +246,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  opacity: 0.50;
+  opacity: 0.30;
   filter: alpha(opacity=75);
   z-index: 2;
 }
@@ -285,7 +284,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
   text-align: center;
   display: grid;
   width: 50vh;
-  height: 30vh;
+  height: 25vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   
@@ -296,6 +295,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
   background-color: #434242;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding: 40px 180px;
   
 }
 
@@ -304,8 +304,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
   font-size: 54px;
   text-align: center;
   font-weight: 300;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  
 }
 
 .contact hr {
@@ -313,8 +312,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
   opacity: 0.2;
   border: 0;
     border-top: 1px solid #eee;
-    height: 0;
-    width: 50%;
+    height: 0;  
     margin: 20px auto;
 }
 
@@ -332,19 +330,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
 
 .projects {
   background-color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
+
+  padding: 40px 180px;
 }
 
 .projects hr {
-  border-color: #727878;
-  opacity: 0.2;
-  border: 0;
-    border-top: 50px solid #eee;
-    height: 0;
-    width: 50%;
-    margin: 0 auto;
-    color: #434242;
+  margin: 0 auto;
+  color: black;
 }
 .projects h2 {
   font-size: 54px;
@@ -357,20 +349,86 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
   line-height: 1.1;
 }
 
-.projects-grid {
-  display: grid;
-  width: 100vh;
+.project-info {
+  position: relative;
+  width: 390px;
+  height: 286px;
+  z-index: 1;
+
+}
+.projects-image {
+  width: 100%;
   height: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-content: center;
-  margin: 0 auto;
+  position: relative;
 }
 
-.projects-grid img {
+.projects-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  
+  opacity: 0;
+  transition: 0.5s;
+  background-color: #22A39F;
 }
+
+.project-info:hover .projects-overlay {
+  opacity: 0.8;
+}
+
+.projects-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 30px 20px;
+  font-family: 'Open Sans', sans-serif !important;
+
+  text-align: left;
+}
+
+.projects-text h3 {
+  font-size: 28px;
+  font-weight: 600;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 3px;
+}
+
+.projects-text p {
+  font-size: 15px;
+  line-height: 1.64;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 390px 390px;
+  grid-column-gap: 10%;
+  padding-top: 20px;
+  justify-content: center;
+} 
+
+.expand-background {
+  background: #22A39F;
+  position: relative;
+  top: -286px;
+  left: 342px;
+  width: 48px;
+  height: 48px;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+.expand-background i {
+  font-size: 28px;
+  top: calc(50% - 14px);
+
+}
+
+.about-me-container {
+  padding: 40px 180px;
+}
+
+

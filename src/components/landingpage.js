@@ -13,7 +13,7 @@ class Landing extends Component {
 
 
                 <p >
-                    C++ | JavaScript | Loving Tina
+                    C++ | C | JavaScript 
                 </p>
                 <div className="overlay"></div>
                 </div>
