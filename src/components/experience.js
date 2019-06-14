@@ -26,8 +26,8 @@ class Experience extends Component {
                     endYear = {2019}
                     name = "Extension Coursework"
                     resumeHeader = "B.S. Computer Science, GPA: 4.00"
-                    description = {"Completing prerequisite fundamental courses in order to prepare \
-                    myself for a graduate education. So far I've completed introductory programming courses, data structures, and computer architecture \
+                    description = {"Completing prerequisite foundational courses in order to prepare \
+                    myself for a graduate education in CS. So far I've completed introductory programming courses, data structures, and computer architecture \
                     and assembly language and I plan on completing algorithims and operating systems during the summer."}/>   
 
                     <Resume
