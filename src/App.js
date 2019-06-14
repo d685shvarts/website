@@ -19,6 +19,7 @@ class App extends Component {
       <div className="main-page">
         
         <NavBar />
+        
         <Element name="landing-scroll"> 
                   <Landing />
           </Element>
