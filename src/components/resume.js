@@ -10,7 +10,11 @@ class Resume extends Component {
                     </div>
                     <div className="resume-right"> 
                         <strong>{this.props.resumeHeader}</strong>
-                        <p>{this.props.description}</p>
+                        <p>{this.props.description}
+                        <a href={this.props.link} rel="noopener noreferrer" target="_blank">
+                        {this.props.linkHeader}
+                        </a>
+                        </p>
                     </div>
                 </div>
         )

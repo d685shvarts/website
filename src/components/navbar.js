@@ -9,15 +9,17 @@ export default class Navbar extends Component {
   render() {
     return (
         <div id="nav-bar">
-            <div className="nav-content">
+            <div className="nav-content" data-spy='scroll"'>
             <li className="nav-item">
-            <Link onClick={this.scrollToTop}
-            activeClass="active"
-            duration= {500}>Home</Link>
+            <Link activeClass="active"
+              to="landing-scroll"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration= {500}>Home</Link>
             </li>
             <li className="nav-item">
             <Link
-              
               activeClass="active"
               to="about-scroll"
               spy={true}
