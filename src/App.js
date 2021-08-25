@@ -18,29 +18,12 @@ class App extends Component {
     return (
       <div className="main-page">
         
-        <NavBar />
         
         <Element name="landing-scroll"> 
                   <Landing />
           </Element>
       
-                
 
-                  <Element name="about-scroll">
-                    <About />
-                  </Element>
-                  <Element name="experience-scroll">
-                    <Experience />
-                  </Element>
-                  
-                  <Element name="projects-scroll"> 
-
-                  <Projects />
-                  </Element>
-                  <Element name="contact-scroll"> 
-
-                  <Contact />
-                  </Element>
 
             </div>  
               

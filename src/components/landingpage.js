@@ -5,24 +5,8 @@ import Experience from './experience.js';
 class Landing extends Component {
     render() {
         return(
-        <div className="home">
-            <div className="landing-page">
-        
-                <div className="banner-text">
-                    <h1>Daniel Shvarts</h1>
-
-
-                <p >
-                    C++ | C | JavaScript 
-                </p>
-                <div className="overlay"></div>
-                </div>
-
-                
-            
-
-            </div>
-          
+        <div style="text-align: center; margin: 50px 0;">
+           I'll update this eventually...
         </div>
                 
         )
